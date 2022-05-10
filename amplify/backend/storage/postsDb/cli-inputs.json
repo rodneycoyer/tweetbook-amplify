@@ -1,0 +1,14 @@
+{
+  "resourceName": "postsDb",
+  "tableName": "postsTable",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "created_at",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

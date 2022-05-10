@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tweetbookamplify-dev-83726-authRole",
+      "UnauthRoleArn": "arn:aws:iam::502355007045:role/amplify-tweetbookamplify-dev-83726-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::502355007045:role/amplify-tweetbookamplify-dev-83726-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-tweetbookamplify-dev-83726-deployment",
+      "UnauthRoleName": "amplify-tweetbookamplify-dev-83726-unauthRole",
+      "StackName": "amplify-tweetbookamplify-dev-83726",
+      "StackId": "arn:aws:cloudformation:us-west-2:502355007045:stack/amplify-tweetbookamplify-dev-83726/18bfc770-d077-11ec-b82a-027564174593",
+      "AmplifyAppId": "dmedqu2d23n1k",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-tweetbookamplify-dev-83726-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "tweetbookamplify7bdb395f": {}
+      },
+      "function": {
+        "postsFunction": {
+          "deploymentBucketName": "amplify-tweetbookamplify-dev-83726-deployment",
+          "s3Key": "amplify-builds/postsFunction-5042367232714e386253-build.zip"
+        }
+      }
+    }
+  }
+}
