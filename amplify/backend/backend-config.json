@@ -26,7 +26,7 @@
     }
   },
   "storage": {
-    "postsDb": {
+    "postsDB": {
       "service": "DynamoDB",
       "providerPlugin": "awscloudformation"
     }
@@ -39,7 +39,7 @@
       "dependsOn": [
         {
           "category": "storage",
-          "resourceName": "postsDb",
+          "resourceName": "postsDB",
           "attributes": [
             "Name",
             "Arn"

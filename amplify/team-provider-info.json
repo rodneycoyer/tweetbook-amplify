@@ -14,12 +14,13 @@
     },
     "categories": {
       "auth": {
-        "tweetbookamplify7bdb395f": {}
+        "tweetbookamplify7bdb395f": {},
+        "true": {}
       },
       "function": {
         "postsFunction": {
           "deploymentBucketName": "amplify-tweetbookamplify-dev-83726-deployment",
-          "s3Key": "amplify-builds/postsFunction-5042367232714e386253-build.zip"
+          "s3Key": "amplify-builds/postsFunction-70562f4f7a4c63346471-build.zip"
         }
       }
     }

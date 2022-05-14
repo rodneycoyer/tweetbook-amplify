@@ -1,12 +1,12 @@
 {
-  "resourceName": "postsDb",
+  "resourceName": "postsDB",
   "tableName": "postsTable",
   "partitionKey": {
     "fieldName": "id",
     "fieldType": "string"
   },
   "sortKey": {
-    "fieldName": "created_at",
+    "fieldName": "author",
     "fieldType": "string"
   },
   "gsi": [],

@@ -16,13 +16,13 @@
     "s3Key": {
       "Type": "String"
     },
-    "storagepostsDbName": {
+    "storagepostsDBName": {
       "Type": "String",
-      "Default": "storagepostsDbName"
+      "Default": "storagepostsDBName"
     },
-    "storagepostsDbArn": {
+    "storagepostsDBArn": {
       "Type": "String",
-      "Default": "storagepostsDbArn"
+      "Default": "storagepostsDBArn"
     }
   },
   "Conditions": {
@@ -97,12 +97,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "tweetbookamplifyLambdaRolef29cd258",
+            "tweetbookamplifyLambdaRolef12aeb8c",
             {
               "Fn::Join": [
                 "",
                 [
-                  "tweetbookamplifyLambdaRolef29cd258",
+                  "tweetbookamplifyLambdaRolef12aeb8c",
                   "-",
                   {
                     "Ref": "env"
@@ -182,14 +182,14 @@
               ],
               "Resource": [
                 {
-                  "Ref": "storagepostsDbArn"
+                  "Ref": "storagepostsDBArn"
                 },
                 {
                   "Fn::Join": [
                     "/",
                     [
                       {
-                        "Ref": "storagepostsDbArn"
+                        "Ref": "storagepostsDBArn"
                       },
                       "index/*"
                     ]

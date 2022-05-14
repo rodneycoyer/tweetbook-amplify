@@ -13,7 +13,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "storage": {
-        "postsDb": {
+        "postsDB": {
             "Name": "string",
             "Arn": "string",
             "StreamArn": "string",

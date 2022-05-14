@@ -25,10 +25,10 @@ if (process.env.ENV && process.env.ENV !== "NONE") {
 const userIdPresent = true; // TODO: update in case is required to use that definition
 const partitionKeyName = "id";
 const partitionKeyType = "S";
-const sortKeyName = "created_at";
+const sortKeyName = "author";
 const sortKeyType = "S";
 const hasSortKey = sortKeyName !== "";
-const path = "/api/v1/posts/:postId";
+const path = "/posts";
 const UNAUTH = 'UNAUTH';
 const hashKeyPath = '/:' + partitionKeyName;
 const sortKeyPath = hasSortKey ? '/:' + sortKeyName : '';
@@ -81,7 +81,7 @@ app.get(path + hashKeyPath, function(req, res) {
     KeyConditions: condition
   }
 
-  dynamodb.scan(queryParams, (err, data) => {
+  dynamodb.query(queryParams, (err, data) => {
     if (err) {
       res.statusCode = 500;
       res.json({error: 'Could not load items: ' + err});
